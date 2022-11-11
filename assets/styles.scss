@@ -1,0 +1,78 @@
+.mat-dialog-container {
+  border-radius: 12px !important;
+  box-shadow: 0px 4px 100px 1px rgba(63, 75, 86, 0.5);
+  .mat-dialog-title {
+    font-family: $font-family-brand;
+    font-weight: 500;
+    font-size: 22px;
+
+    > button {
+      float: right;
+      margin: -4px;
+    }
+  }
+  .mat-dialog-actions {
+    justify-content: center;
+  }
+}
+
+.no-container {
+  .mat-dialog-container {
+    display: contents;
+  }
+}
+
+.no-padding {
+  .mat-dialog-container {
+    padding: 0;
+  }
+}
+
+.no-background {
+  .mat-dialog-container {
+    background: transparent;
+  }
+}
+
+.cdk-overlay-pane {
+  &.confirm,
+  &.alert {
+    width: 400px;
+  }
+  &.opal-w-500px {
+    width: 500px;
+  }
+  &.opal-w-600px {
+    width: 600px;
+  }
+  &.opal-w-700px {
+    width: 700px;
+  }
+  &.opal-w-800px {
+    width: 800px;
+  }
+  &.opal-w-900px {
+    width: 900px;
+  }
+  &.opal-w-1000px {
+    width: 1000px;
+  }
+
+  &.danger button[color="accent"] {
+    @apply tw-bg-warn-700;
+  }
+}
+
+
+@supports (backdrop-filter: blur(8px)) {
+  .cdk-overlay-dark-backdrop {
+    @apply tw-bg-black-500/25;
+    backdrop-filter: blur(8px);
+  }
+}
+
+@supports not (backdrop-filter: blur(8px)) {
+  app-root[aria-hidden=true] {
+    filter: blur(8px);
+  }
+}

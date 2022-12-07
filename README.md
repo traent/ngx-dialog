@@ -11,7 +11,7 @@
 > @traent/ngx-dialog is an Angular library that provides a dialog service for showing some predefined typologies of dialog.
 
 
-> Important note: This library is actually under development and could have some further breaking changes.
+> Notice: This library is currently under development and might be subjected to breaking changes.
 
 ## Compatibility with Angular Versions
 
@@ -55,5 +55,4 @@ In the future, we will improve the tooling to allow everyone to build this libra
 
 ## Contributors
 
-At the moment, contributions are not supported through Pull Request.
-However, we truly appreciate any feedback made through the issue system.
+We are open to any contributions and feedbacks.

@@ -27,7 +27,7 @@ export class NgxT3DialogService {
   }
 
   async message({ classes, ...data }: MessageDialogData): Promise<{ confirm: boolean; message?: string }> {
-    return this.dialog.open(MessageDialogComponent, { data, panelClass: ['opal-w-500px'].concat(classes || []) }).afterClosed().toPromise()
+    return this.dialog.open(MessageDialogComponent, { data, panelClass: ['tw-w-[500px]'].concat(classes || []) }).afterClosed().toPromise()
       .catch(() => undefined);
   }
 }

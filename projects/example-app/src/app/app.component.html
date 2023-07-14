@@ -1,0 +1,54 @@
+<div class="tw-flex tw-flex-col tw-items-center">
+  <span class="tw-ml-5 tw-font-bold">Dialog Methods:</span>
+
+  <div class="container tw-mt-2">
+    <div
+      class="content tw-bg-orange-600 tw-cursor-pointer"
+      (click)="openDialog('alert', {
+        title: 'Alert Dialog Title',
+        description: 'Here you can add a description.',
+        dismissLabel: 'A custom dismiss label',
+        type: 'alert'
+      })">
+      alert
+    </div>
+
+    <div
+      class="content tw-bg-green-500 tw-cursor-pointer"
+      (click)="openDialog('confirm', {
+        title: 'Confirm Dialog Title',
+        description: 'Here you can add a description.',
+        primaryLabel: 'A custom primary label',
+        secondaryLabel: 'A custom secondary label'
+      })">
+      confirm
+    </div>
+
+    <div
+      class="content tw-bg-accent-500 tw-cursor-pointer"
+      (click)="openDialog('message', {
+        title: 'Message Dialog Title',
+        description: 'Here you can add a description',
+        message: 'A prefilled field',
+        placeholder: 'The placeholder for the field',
+        primaryLabel: 'Primary label',
+        secondaryLabel: 'Secondary label'
+      })">
+      message
+    </div>
+  </div>
+
+  <div class="container tw-mt-4 tw-flex tw-flex-col tw-justify-center tw-items-center tw-w-60">
+    Dialog result:
+    <span class="content tw-text-center tw-w-40 tw-h-10">
+      {{ (result | json) ?? 'Here you will see the result from the last dialog opened!'}}
+    </span>
+
+    <div
+      class="tw-flex tw-flex-row tw-items-center tw-justify-center tw-bg-accent-500 tw-text-white tw-rounded tw-cursor-pointer tw-mt-2 tw-py-4 tw-px-6"
+      (click)="result = undefined">
+      reset result
+    </div>
+  </div>
+
+</div>

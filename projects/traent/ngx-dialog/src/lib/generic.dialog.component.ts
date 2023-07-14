@@ -9,7 +9,7 @@ import { isAlertDialog, isConfirmDialog } from './utils';
   template: `
     <div data-test="generic-dialog">
       <h2 mat-dialog-title>{{ data.title }}</h2>
-      <mat-dialog-content class="opal-mb-3" *ngIf="data.description">{{ data.description }}</mat-dialog-content>
+      <mat-dialog-content class="tw-mb-3" *ngIf="data.description">{{ data.description }}</mat-dialog-content>
       <mat-dialog-actions>
         <button
           *ngIf="isAlertDialog(data)"

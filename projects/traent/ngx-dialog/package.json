@@ -1,0 +1,23 @@
+{
+  "name": "@traent/ngx-dialog",
+  "version": "0.1.16",
+  "author": {
+    "name": "Traent S.r.l."
+  },
+  "license": "Apache License 2.0",
+  "peerDependencies": {
+    "@angular/common": "^14.2.0",
+    "@angular/core": "^14.2.0",
+    "@angular/material": "^14.2.7",
+    "@traent/design-system": "^0.0.7",
+    "rxjs": "^7.5.7"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "exports": {
+    "./assets/styles.min": {
+      "sass": "./assets/styles.min.scss"
+    }
+  }
+}

@@ -11,11 +11,11 @@ import { MessageDialogData } from './models';
       <mat-dialog-content>
         <p
           *ngIf="data.description"
-          class="opal-m-0 opal-mb-6"
+          class="tw-m-0 tw-mb-6"
           [innerHtml]="data.description"></p>
         <mat-form-field
           appearance="outline"
-          class="opal-w-full">
+          class="tw-w-full">
           <textarea
             *ngIf="data.multiline"
             rows="3"

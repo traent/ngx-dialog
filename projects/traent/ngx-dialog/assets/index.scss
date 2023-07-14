@@ -1,10 +1,12 @@
+@import "../../../../node_modules/@traent/design-system/tailwind/scss/utils/_palette.scss";
+
 @import "./tailwind.scss";
 
 .mat-dialog-container {
   border-radius: 12px !important;
   box-shadow: 0px 4px 100px 1px rgba(63, 75, 86, 0.5);
   .mat-dialog-title {
-    font-family: $font-family-brand;
+    font-family: theme('fontFamily.brand');
     font-weight: 500;
     font-size: 22px;
 
@@ -41,22 +43,22 @@
   &.alert {
     width: 400px;
   }
-  &.opal-w-500px {
+  &.tw-w-\[500px\] {
     width: 500px;
   }
-  &.opal-w-600px {
+  &.tw-w-\[600px\] {
     width: 600px;
   }
-  &.opal-w-700px {
+  &.tw-w-\[700px\] {
     width: 700px;
   }
-  &.opal-w-800px {
+  &.tw-w-\[800px\] {
     width: 800px;
   }
-  &.opal-w-900px {
+  &.tw-w-\[900px\] {
     width: 900px;
   }
-  &.opal-w-1000px {
+  &.tw-w-\[1000px\] {
     width: 1000px;
   }
 
@@ -68,7 +70,7 @@
 
 @supports (backdrop-filter: blur(8px)) {
   .cdk-overlay-dark-backdrop {
-    @apply tw-bg-black-500/25;
+    @apply tw-bg-black/25;
     backdrop-filter: blur(8px);
   }
 }
